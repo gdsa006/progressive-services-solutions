@@ -133,7 +133,7 @@
 				<div class="col-lg-8 col-md-8 offset-md-2 offset-lg-2">
 					<div class="contact-form">
 						<p class="form-message"></p>
-						<form id="contact-form" class="form" action="http://api.psns.ltd/process_form.php" method="POST">
+<form id="quote-form" class="form" action="http://api.psns.ltd/process_form.php" method="POST">
 							<div class="row">
 								<div class="col-lg-6 col-md-12">
 									<div class="form-group">
@@ -316,6 +316,32 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+	<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("quote-form");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("http://api.psns.ltd/process_form.php", {
+      method: "POST",
+      body: formData
+    })
+      .then(response => response.json())
+      .then(data => {
+        // Handle the API response data here
+        console.log("API response:", data);
+      })
+      .catch(error => {
+        console.error("Error:", error);
+      });
+  });
+});
+</script>
+
 </body>
 
 </html>
