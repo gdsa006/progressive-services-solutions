@@ -123,20 +123,91 @@
 
 
 
-<form action="YOUR_FORMSPREE_ENDPOINT" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <button type="submit">Submit</button>
-</form>
 
 
+
+<div class="contact-section section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-12">
+                    <div class="contact-info-box">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="single-contact-info-box">
+									<div class="contact-info">
+										<h6>Address:</h6>
+										<p>Progressive Services & Solutions HQ,</p>
+										<p>Aukland, New Zealand</p>
+									</div>
+									<div class="contact-info-bg-icon">
+										<i class="pe-7s-map-marker"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="single-contact-info-box">
+									<div class="contact-info">
+										<h6>Phone:</h6>
+										<p>+64 27 769 6977</p>
+									</div>
+									<div class="contact-info-bg-icon">
+										<i class="pe-7s-call"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="single-contact-info-box">
+									<div class="contact-info">
+										<h6>Email:</h6>
+										<p>contact@psns.ltd</p>
+									</div>
+									<div class="contact-info-bg-icon">
+										<i class="pe-7s-mail"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+				</div>
+				<div class="col-lg-8 col-md-8 offset-md-2 offset-lg-2">
+					<div class="contact-form">
+						<p class="form-message"></p>
+						<form id="contact-form" class="form" action="YOUR_FORMSPREE_ENDPOINT" method="POST">
+							<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<div class="form-group">
+										<input type="text" name="name" id="name" class="form-control" required="" placeholder="Your Name"> </div>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<div class="form-group">
+										<input type="email" name="email" id="email" class="form-control" required="" placeholder="Your Email"> </div>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<div class="form-group">
+										<input type="text" name="phone" id="phone" required="" class="form-control" placeholder="Your Phone"> </div>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<div class="form-group">
+										<input type="text" name="subject" id="subject" class="form-control" required="" placeholder="Your Subject"> </div>
+								</div>
+								<div class="col-lg-12 col-md-12">
+									<div class="form-group">
+										<textarea name="message" class="form-control" id="message" cols="30" rows="6" required="" placeholder="Your Message"></textarea>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12">
+									<button type="submit" class="default-btn">Send Message <span></span></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
 
     <!-- Start Footer Section -->
     <section class="footer-area section-padding">
