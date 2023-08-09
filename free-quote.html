@@ -365,10 +365,12 @@
 	<script>
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("quote-form");
+  const successModal = document.getElementById("success-modal");
+  const closeModal = successModal.querySelector(".close");
 
   form.addEventListener("submit", function(event) {
     event.preventDefault();
-alert('0');
+    
     const formData = new FormData(form);
 
     fetch("//api.psns.ltd/process_form.php", {
@@ -379,12 +381,21 @@ alert('0');
       .then(data => {
         // Handle the API response data here
         console.log("API response:", data);
+
+        // Show the success modal
+        successModal.style.display = "block";
       })
       .catch(error => {
         console.error("Error:", error);
       });
   });
+
+  // Close the modal when the close button is clicked
+  closeModal.addEventListener("click", function() {
+    successModal.style.display = "none";
+  });
 });
+
 </script>
 
 </body>
