@@ -1136,6 +1136,8 @@ p:last-child {
     box-shadow: 0px 2px 25px 0px rgb(110, 110, 110, 0.12);
     -webkit-transition: all 500ms ease-out;
     transition: all 500ms ease-out;
+	height: 100%;
+	margin-bottom: 20px
 }
 
 .services-icon {
@@ -1161,9 +1163,10 @@ p:last-child {
 }
 
 .services-image{
-	width: 350px;
-	height: 350px;
-	position: relative
+	    width: 350px;
+    height: 350px;
+    border-radius: 15rem;
+    position: relative;
 }
 
 .services-image img{
@@ -1173,6 +1176,7 @@ p:last-child {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	    border-radius: 15rem;
 }
 
 .single-services-item h3 {
