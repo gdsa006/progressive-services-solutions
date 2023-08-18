@@ -1139,6 +1139,14 @@ p:last-child {
 	height: 100%;
 }
 
+.single-services-item.single-team-item h3{
+	    font-family: cursive;
+}
+
+.single-services-item.single-team-item h3 span{
+font-family: 'Cabin', sans-serif
+}
+
 .services-icon {
     display: inline-block;
     margin-bottom: 25px;
