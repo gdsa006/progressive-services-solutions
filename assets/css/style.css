@@ -1137,7 +1137,6 @@ p:last-child {
     -webkit-transition: all 500ms ease-out;
     transition: all 500ms ease-out;
 	height: 100%;
-	margin-bottom: 20px
 }
 
 .services-icon {
