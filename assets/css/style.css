@@ -1207,6 +1207,15 @@ font-family: 'Cabin', sans-serif
     will-change: transform;
 }
 
+.single-services-item small{
+	font-size: 15px;
+	margin-top: 15px;
+	margin-bottom: 0;
+	-webkit-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
 .single-services-item ul li{
 	line-height: 1.8;
     color: #5f5f5f;
@@ -1256,6 +1265,11 @@ font-family: 'Cabin', sans-serif
 .single-services-item:hover p {
 	color: #fff;
 }
+
+.single-services-item:hover small {
+	color: #fff;
+}
+
 .single-services-item:hover .services-btn-link .services-link {
 	color: #fff;
 }
